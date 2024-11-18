@@ -34,6 +34,6 @@ jobs:
       - name: Deployment
         uses: actions/webapps-deploy@v2
         with: 
-          app-name: ${{ evn.AZURE_WEBAPP_NAME }}
+          app-name: ${{ env.AZURE_WEBAPP_NAME }}
           publish-profile: ${{ env.AZURE_PUBLISH_PROFLE }}
           package: "${{ env.AZURE_WEBAPP_PACKAGE_PATH }}"
